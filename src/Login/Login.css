@@ -1,0 +1,47 @@
+.Login{
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+
+.logo_home {
+    width: 250px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.Login_Title{
+    width: 10.75rem;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    letter-spacing: -1.2px;
+    text-align: center;
+    color: #383743;
+}
+.Login_Text{
+    width: 15rem;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 1.063rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.48;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #383743
+}
+
+  @media (max-width: 768px)
+{
+    .logo_home{
+
+    }
+    .Login{
+        width: 100%;
+    }
+}
