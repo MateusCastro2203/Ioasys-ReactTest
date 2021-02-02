@@ -1,9 +1,7 @@
 import React from 'react'
 import './Login.css'
-import FormLogin from '../Components/Forms/FormLogin'
-import  logo   from '../assest/logo/logo-home.png'
-import  logo2  from '../assest/logo/logo-home@2x.png'
-import  logo3  from '../assest/logo/logo-home@3x.png'
+import FormLogin from '../../Components/Forms/FormLogin'
+import  logo3  from '../../assest/logo/logo-home@3x.png'
 
 const Login = () => {
     return (

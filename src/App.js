@@ -1,9 +1,11 @@
-import Login from "./Login/Login";
 import './App.css';
+import Routes from "./Router/Router";
+
+
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Routes/>
     </div>
   );
 }

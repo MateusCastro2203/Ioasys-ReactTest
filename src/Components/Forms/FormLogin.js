@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import './FormLogin.css'
 import APILogin from '../../Fetch/APILogin'
+
 const FormLogin = () => {
+
     const { register, handleSubmit } = useForm()
+
     const onSubmit = (data) => {
-        APILogin(data.Email,data.Password)
+        APILogin(data.Email,data.Password);
+
         console.log(data)
     }
+    
     return (
         <form  className="Form" onSubmit={handleSubmit(onSubmit)} >
             <label>Email</label>
@@ -17,7 +22,7 @@ const FormLogin = () => {
                 type="text" 
                 label="E-mail" 
                 placeholder="Digite seu e-mail" 
-                Required={true} 
+                required={true} 
                 className="icon Email" 
             />
             <label>Senha</label>
@@ -27,7 +32,7 @@ const FormLogin = () => {
                 type="password" 
                 label="Senha" 
                 placeholder={null} 
-                Required={true} 
+                required={true} 
                 className="icon Password" 
             />
             <button type='submit' className="btn">entrar</button>
